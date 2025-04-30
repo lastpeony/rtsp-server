@@ -1,0 +1,644 @@
+[2025-04-29 17:40:43] : [INFO] net_buf_fl_init::num = 4
+[2025-04-29 17:40:43] : [INFO] hdrv_buf_fl_init::num = 64
+[2025-04-29 17:40:43] : [ERROR] http_srv_net_init::bind tcp socket fail,err[Permission denied]!!!
+[2025-04-29 17:40:43] : [DEBUG] rtsp_rx_thread start
+[2025-04-29 17:56:59] : [INFO] new user over tcp from[127.0.0.1,39258]
+[2025-04-29 17:56:59] : [DEBUG] OPTIONS rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 1
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+
+
+[2025-04-29 17:56:59] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 1
+Date: Tue Apr 29 14:56:59 2025
+Public: DESCRIBE, SETUP, PLAY, OPTIONS, TEARDOWN, GET_PARAMETER
+
+
+[2025-04-29 17:56:59] : [DEBUG] DESCRIBE rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 2
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Accept: application/sdp
+
+
+[2025-04-29 17:56:59] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 2
+Date: Tue Apr 29 14:56:59 2025
+Session: 824066785
+Content-Base: rtsp://127.0.0.1:6554/test.flv
+Content-type: application/sdp
+Content-Length: 575
+
+v=0
+o=- 0 0 IN IP4 0.0.0.0
+s=session
+c=IN IP4 0.0.0.0
+t=0 0
+a=control:*
+a=range:npt=0-
+a=type:broadcast
+m=audio 40002 RTP/AVP 97
+c=IN IP4 232.221.114.208/255
+a=rtpmap:97 MPEG4-GENERIC/44100/2
+a=fmtp:97 streamtype=5;profile-level-id=1;mode=AAC-hbr;sizelength=13;indexlength=3;indexdeltalength=3;config=1210
+a=recvonly
+a=control:realaudio
+m=video 40000 RTP/AVP 96
+c=IN IP4 232.252.205.114/255
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;profile-level-id=00001E;sprop-parameter-sets=Z2QAHqyyAUBf8uAiAAADAAIAAAMAZB4sXJA=,aOuDyyLA
+a=control:realvideo
+
+[2025-04-29 17:56:59] : [DEBUG] SETUP rtsp://127.0.0.1:6554/test.flv/realvideo RTSP/1.0
+CSeq: 3
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Blocksize: 4096
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+
+[2025-04-29 17:56:59] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 3
+Date: Tue Apr 29 14:56:59 2025
+Session: 824066785
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+
+[2025-04-29 17:56:59] : [DEBUG] SETUP rtsp://127.0.0.1:6554/test.flv/realaudio RTSP/1.0
+CSeq: 4
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 824066785
+Blocksize: 4096
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+
+
+[2025-04-29 17:56:59] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 4
+Date: Tue Apr 29 14:56:59 2025
+Session: 824066785
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+
+
+[2025-04-29 17:56:59] : [DEBUG] PLAY rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 5
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 824066785
+Range: npt=0.000-
+
+
+[2025-04-29 17:56:59] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 5
+Date: Tue Apr 29 14:56:59 2025
+Range: npt=0.000-
+Session: 824066785
+
+
+[2025-04-29 17:57:19] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 6
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 824066785
+
+
+[2025-04-29 17:57:19] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 6
+Date: Tue Apr 29 14:57:19 2025
+Session: 824066785
+
+
+[2025-04-29 17:57:39] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 7
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 824066785
+
+
+[2025-04-29 17:57:39] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 7
+Date: Tue Apr 29 14:57:39 2025
+Session: 824066785
+
+
+[2025-04-29 17:57:59] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 8
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 824066785
+
+
+[2025-04-29 17:57:59] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 8
+Date: Tue Apr 29 14:57:59 2025
+Session: 824066785
+
+
+[2025-04-29 17:58:19] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 9
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 824066785
+
+
+[2025-04-29 17:58:19] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 9
+Date: Tue Apr 29 14:58:19 2025
+Session: 824066785
+
+
+[2025-04-29 17:58:39] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 10
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 824066785
+
+
+[2025-04-29 17:58:39] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 10
+Date: Tue Apr 29 14:58:39 2025
+Session: 824066785
+
+
+[2025-04-29 17:58:59] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 11
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 824066785
+
+
+[2025-04-29 17:58:59] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 11
+Date: Tue Apr 29 14:58:59 2025
+Session: 824066785
+
+
+[2025-04-29 17:59:19] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 12
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 824066785
+
+
+[2025-04-29 17:59:19] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 12
+Date: Tue Apr 29 14:59:19 2025
+Session: 824066785
+
+
+[2025-04-29 17:59:59] : [ERROR] rtsp_tcp_rx, recv ret = 0, rcv_dlen = 0
+[2025-04-29 17:59:59] : [DEBUG] rtsp_close_rua p_rua = 0x3034b2e8
+[2025-04-29 18:16:15] : [INFO] new user over tcp from[127.0.0.1,36138]
+[2025-04-29 18:16:15] : [DEBUG] OPTIONS rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 1
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+
+
+[2025-04-29 18:16:15] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 1
+Date: Tue Apr 29 15:16:15 2025
+Public: DESCRIBE, SETUP, PLAY, OPTIONS, TEARDOWN, GET_PARAMETER
+
+
+[2025-04-29 18:16:15] : [DEBUG] DESCRIBE rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 2
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Accept: application/sdp
+
+
+[2025-04-29 18:16:15] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 2
+Date: Tue Apr 29 15:16:15 2025
+Session: 1545867053
+Content-Base: rtsp://127.0.0.1:6554/test.flv
+Content-type: application/sdp
+Content-Length: 573
+
+v=0
+o=- 0 0 IN IP4 0.0.0.0
+s=session
+c=IN IP4 0.0.0.0
+t=0 0
+a=control:*
+a=range:npt=0-
+a=type:broadcast
+m=audio 40006 RTP/AVP 97
+c=IN IP4 232.120.123.17/255
+a=rtpmap:97 MPEG4-GENERIC/44100/2
+a=fmtp:97 streamtype=5;profile-level-id=1;mode=AAC-hbr;sizelength=13;indexlength=3;indexdeltalength=3;config=1210
+a=recvonly
+a=control:realaudio
+m=video 40004 RTP/AVP 96
+c=IN IP4 232.124.55.237/255
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;profile-level-id=00001E;sprop-parameter-sets=Z2QAHqyyAUBf8uAiAAADAAIAAAMAZB4sXJA=,aOuDyyLA
+a=control:realvideo
+
+[2025-04-29 18:16:15] : [DEBUG] SETUP rtsp://127.0.0.1:6554/test.flv/realvideo RTSP/1.0
+CSeq: 3
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Blocksize: 4096
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+
+[2025-04-29 18:16:15] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 3
+Date: Tue Apr 29 15:16:15 2025
+Session: 1545867053
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+
+[2025-04-29 18:16:15] : [DEBUG] SETUP rtsp://127.0.0.1:6554/test.flv/realaudio RTSP/1.0
+CSeq: 4
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1545867053
+Blocksize: 4096
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+
+
+[2025-04-29 18:16:15] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 4
+Date: Tue Apr 29 15:16:15 2025
+Session: 1545867053
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+
+
+[2025-04-29 18:16:15] : [DEBUG] PLAY rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 5
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1545867053
+Range: npt=0.000-
+
+
+[2025-04-29 18:16:15] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 5
+Date: Tue Apr 29 15:16:15 2025
+Range: npt=0.000-
+Session: 1545867053
+
+
+[2025-04-29 18:16:35] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 6
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1545867053
+
+
+[2025-04-29 18:16:35] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 6
+Date: Tue Apr 29 15:16:35 2025
+Session: 1545867053
+
+
+[2025-04-29 18:16:55] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 7
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1545867053
+
+
+[2025-04-29 18:16:55] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 7
+Date: Tue Apr 29 15:16:55 2025
+Session: 1545867053
+
+
+[2025-04-29 18:17:15] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 8
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1545867053
+
+
+[2025-04-29 18:17:15] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 8
+Date: Tue Apr 29 15:17:15 2025
+Session: 1545867053
+
+
+[2025-04-29 18:17:35] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 9
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1545867053
+
+
+[2025-04-29 18:17:35] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 9
+Date: Tue Apr 29 15:17:35 2025
+Session: 1545867053
+
+
+[2025-04-29 18:17:55] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 10
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1545867053
+
+
+[2025-04-29 18:17:55] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 10
+Date: Tue Apr 29 15:17:55 2025
+Session: 1545867053
+
+
+[2025-04-29 18:18:15] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 11
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1545867053
+
+
+[2025-04-29 18:18:15] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 11
+Date: Tue Apr 29 15:18:15 2025
+Session: 1545867053
+
+
+[2025-04-29 18:18:35] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 12
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1545867053
+
+
+[2025-04-29 18:18:35] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 12
+Date: Tue Apr 29 15:18:35 2025
+Session: 1545867053
+
+
+[2025-04-29 18:19:15] : [ERROR] rtsp_tcp_rx, recv ret = 0, rcv_dlen = 0
+[2025-04-29 18:19:15] : [DEBUG] rtsp_close_rua p_rua = 0x3034b2e8
+[2025-04-29 18:36:41] : [INFO] new user over tcp from[127.0.0.1,42020]
+[2025-04-29 18:36:41] : [DEBUG] OPTIONS rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 1
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+
+
+[2025-04-29 18:36:41] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 1
+Date: Tue Apr 29 15:36:41 2025
+Public: DESCRIBE, SETUP, PLAY, OPTIONS, TEARDOWN, GET_PARAMETER
+
+
+[2025-04-29 18:36:41] : [DEBUG] DESCRIBE rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 2
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Accept: application/sdp
+
+
+[2025-04-29 18:36:41] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 2
+Date: Tue Apr 29 15:36:41 2025
+Session: 797204960
+Content-Base: rtsp://127.0.0.1:6554/test.flv
+Content-type: application/sdp
+Content-Length: 571
+
+v=0
+o=- 0 0 IN IP4 0.0.0.0
+s=session
+c=IN IP4 0.0.0.0
+t=0 0
+a=control:*
+a=range:npt=0-
+a=type:broadcast
+m=audio 40010 RTP/AVP 97
+c=IN IP4 232.9.142.44/255
+a=rtpmap:97 MPEG4-GENERIC/44100/2
+a=fmtp:97 streamtype=5;profile-level-id=1;mode=AAC-hbr;sizelength=13;indexlength=3;indexdeltalength=3;config=1210
+a=recvonly
+a=control:realaudio
+m=video 40008 RTP/AVP 96
+c=IN IP4 232.15.105.209/255
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;profile-level-id=00001E;sprop-parameter-sets=Z2QAHqyyAUBf8uAiAAADAAIAAAMAZB4sXJA=,aOuDyyLA
+a=control:realvideo
+
+[2025-04-29 18:36:41] : [DEBUG] SETUP rtsp://127.0.0.1:6554/test.flv/realvideo RTSP/1.0
+CSeq: 3
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Blocksize: 4096
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+
+[2025-04-29 18:36:41] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 3
+Date: Tue Apr 29 15:36:41 2025
+Session: 797204960
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+
+[2025-04-29 18:36:41] : [DEBUG] SETUP rtsp://127.0.0.1:6554/test.flv/realaudio RTSP/1.0
+CSeq: 4
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 797204960
+Blocksize: 4096
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+
+
+[2025-04-29 18:36:41] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 4
+Date: Tue Apr 29 15:36:41 2025
+Session: 797204960
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+
+
+[2025-04-29 18:36:41] : [DEBUG] PLAY rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 5
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 797204960
+Range: npt=0.000-
+
+
+[2025-04-29 18:36:41] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 5
+Date: Tue Apr 29 15:36:41 2025
+Range: npt=0.000-
+Session: 797204960
+
+
+[2025-04-29 18:37:01] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 6
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 797204960
+
+
+[2025-04-29 18:37:01] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 6
+Date: Tue Apr 29 15:37:01 2025
+Session: 797204960
+
+
+[2025-04-29 18:37:15] : [DEBUG] TEARDOWN rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 7
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 797204960
+
+
+[2025-04-29 18:37:15] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 7
+Date: Tue Apr 29 15:37:15 2025
+Session: 797204960
+
+
+[2025-04-29 18:37:15] : [ERROR] rtsp_tcp_rx, recv ret = 0, rcv_dlen = 0
+[2025-04-29 18:37:16] : [DEBUG] rtsp_close_rua p_rua = 0x3034b2e8
+[2025-04-29 18:37:16] : [DEBUG] rtsp_close_rua p_rua = 0x3034b2e8
+[2025-04-29 18:37:16] : [WARN] pps_used_node::used list is empty!!!
+[2025-04-29 18:37:16] : [WARN] ppstack_push::unit node 0 already in freelist !!!
+[2025-04-29 18:39:20] : [INFO] new user over tcp from[127.0.0.1,50062]
+[2025-04-29 18:39:20] : [DEBUG] OPTIONS rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 1
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+
+
+[2025-04-29 18:39:20] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 1
+Date: Tue Apr 29 15:39:20 2025
+Public: DESCRIBE, SETUP, PLAY, OPTIONS, TEARDOWN, GET_PARAMETER
+
+
+[2025-04-29 18:39:20] : [DEBUG] DESCRIBE rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 2
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Accept: application/sdp
+
+
+[2025-04-29 18:39:20] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 2
+Date: Tue Apr 29 15:39:20 2025
+Session: 1956103450
+Content-Base: rtsp://127.0.0.1:6554/test.flv
+Content-type: application/sdp
+Content-Length: 573
+
+v=0
+o=- 0 0 IN IP4 0.0.0.0
+s=session
+c=IN IP4 0.0.0.0
+t=0 0
+a=control:*
+a=range:npt=0-
+a=type:broadcast
+m=audio 40014 RTP/AVP 97
+c=IN IP4 232.202.73.212/255
+a=rtpmap:97 MPEG4-GENERIC/44100/2
+a=fmtp:97 streamtype=5;profile-level-id=1;mode=AAC-hbr;sizelength=13;indexlength=3;indexdeltalength=3;config=1210
+a=recvonly
+a=control:realaudio
+m=video 40012 RTP/AVP 96
+c=IN IP4 232.233.49.226/255
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;profile-level-id=00001E;sprop-parameter-sets=Z2QAHqyyAUBf8uAiAAADAAIAAAMAZB4sXJA=,aOuDyyLA
+a=control:realvideo
+
+[2025-04-29 18:39:20] : [DEBUG] SETUP rtsp://127.0.0.1:6554/test.flv/realvideo RTSP/1.0
+CSeq: 3
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Blocksize: 4096
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+
+[2025-04-29 18:39:20] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 3
+Date: Tue Apr 29 15:39:20 2025
+Session: 1956103450
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+
+[2025-04-29 18:39:20] : [DEBUG] SETUP rtsp://127.0.0.1:6554/test.flv/realaudio RTSP/1.0
+CSeq: 4
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1956103450
+Blocksize: 4096
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+
+
+[2025-04-29 18:39:20] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 4
+Date: Tue Apr 29 15:39:20 2025
+Session: 1956103450
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+
+
+[2025-04-29 18:39:20] : [DEBUG] PLAY rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 5
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1956103450
+Range: npt=0.000-
+
+
+[2025-04-29 18:39:20] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 5
+Date: Tue Apr 29 15:39:20 2025
+Range: npt=0.000-
+Session: 1956103450
+
+
+[2025-04-29 18:39:40] : [DEBUG] GET_PARAMETER rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 6
+Content-Type: text/parameters
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1956103450
+
+
+[2025-04-29 18:39:40] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 6
+Date: Tue Apr 29 15:39:40 2025
+Session: 1956103450
+
+
+[2025-04-29 18:39:57] : [DEBUG] TEARDOWN rtsp://127.0.0.1:6554/test.flv RTSP/1.0
+CSeq: 7
+User-Agent: Red5 Pro Server (BRAZILIAN.b152-feature21)
+Session: 1956103450
+
+
+[2025-04-29 18:39:57] : [DEBUG] RTSP/1.0 200 OK
+Server: happytime rtsp server 2.2
+CSeq: 7
+Date: Tue Apr 29 15:39:57 2025
+Session: 1956103450
+
+
+[2025-04-29 18:39:57] : [ERROR] rtsp_tcp_rx, recv ret = 0, rcv_dlen = 0
+[2025-04-29 18:39:57] : [DEBUG] rtsp_close_rua p_rua = 0x3034b2e8
+[2025-04-29 18:39:57] : [DEBUG] rtsp_close_rua p_rua = 0x3034b2e8
+[2025-04-29 18:39:57] : [WARN] pps_used_node::used list is empty!!!
+[2025-04-29 18:39:57] : [WARN] ppstack_push::unit node 0 already in freelist !!!
